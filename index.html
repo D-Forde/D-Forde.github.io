@@ -1,21 +1,24 @@
 <!doctype html>
 <html>
 <head>
-<title> Test Page </title>
 	<link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css">
 	<link type="text/css" rel="stylesheet" href="../src/css/graph.css">
 	<link type="text/css" rel="stylesheet" href="../src/css/detail.css">
 	<link type="text/css" rel="stylesheet" href="../src/css/legend.css">
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.js"></script>
-
+	<link type="text/css" rel="stylesheet" href="css/extensions.css?v=2">
 
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-	<!-- Latest compiled and minified JavaScript -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.js"></script>
 
 
 	<script src="../vendor/d3.v3.js"></script>
@@ -55,7 +58,8 @@
 		}
 
 		#chart-container{
-			width:95%;
+			width:81%;
+			margin:0 auto;
 		}
 		#chart{
 			top:6px;
@@ -85,10 +89,6 @@
 			left: 30px;
 			height:10px	;
 		}
-		.label
-		{
-			color:#000;
-		}
 	</style>
 	</head>
 	<body>
@@ -103,7 +103,7 @@
 	</div>
 <script>
 	var margin = {top: 20, right: 20, bottom: 30, left: 50};
-    var width = window.innerWidth * 0.95;
+    var width = window.innerWidth * 0.80;
     var height = window.innerHeight * 0.55;
 
 var data = [{x: 1421625600.000000, y: 13},{x: 1421626500.000000, y: 20},{x: 1421627400.000000, y: 18},{x: 1421628300.000000, y: 0},{x: 1421629200.000000, y: 14},{x: 1421630100.000000, y: 20},{x: 1421631000.000000, y: 18},{x: 1421631900.000000, y: 13},{x: 1421632800.000000, y: 14},{x: 1421633700.000000, y: 20},{x: 1421634600.000000, y: 18},{x: 1421635500.000000, y: 0},{x: 1421636400.000000, y: 14},{x: 1421637300.000000, y: 20},{x: 1421638200.000000, y: 18},{x: 1421639100.000000, y: 13},{x: 1421640000.000000, y: 14},{x: 1421640900.000000, y: 20},{x: 1421641800.000000, y: 18},{x: 1421642700.000000, y: 13},{x: 1421643600.000000, y: 14},{x: 1421644500.000000, y: 20},{x: 1421645400.000000, y: 18},{x: 1421646300.000000, y: 13},{x: 1421647200.000000, y: 14},{x: 1421648100.000000, y: 20},{x: 1421649000.000000, y: 18},{x: 1421649900.000000, y: 13},{x: 1421650800.000000, y: 14},{x: 1421651700.000000, y: 20},{x: 1421652600.000000, y: 18},{x: 1421653500.000000, y: 0},{x: 1421654400.000000, y: 14},{x: 1421655300.000000, y: 20},{x: 1421656200.000000, y: 18},{x: 1421657100.000000, y: 13},{x: 1421658000.000000, y: 14},{x: 1421658900.000000, y: 20},{x: 1421659800.000000, y: 18},{x: 1421660700.000000, y: 13},{x: 1421661600.000000, y: 14},{x: 1421662500.000000, y: 20},{x: 1421663400.000000, y: 18},{x: 1421664300.000000, y: 13},{x: 1421665200.000000, y: 14},{x: 1421666100.000000, y: 20},{x: 1421667000.000000, y: 18},{x: 1421667900.000000, y: 13},{x: 1421668800.000000, y: 14},{x: 1421669700.000000, y: 20},{x: 1421670600.000000, y: 18},{x: 1421671500.000000, y: 0},{x: 1421672400.000000, y: 14},{x: 1421673300.000000, y: 20},{x: 1421674200.000000, y: 18},{x: 1421675100.000000, y: 13},{x: 1421676000.000000, y: 14},{x: 1421676900.000000, y: 20},{x: 1421677800.000000, y: 18},{x: 1421678700.000000, y: 13},{x: 1421679600.000000, y: 14},{x: 1421680500.000000, y: 20},{x: 1421681400.000000, y: 18},{x: 1421682300.000000, y: 13},{x: 1421683200.000000, y: 14},{x: 1421684100.000000, y: 20},{x: 1421685000.000000, y: 18},{x: 1421685900.000000, y: 13},{x: 1421686800.000000, y: 14},{x: 1421687700.000000, y: 20},{x: 1421688600.000000, y: 18},{x: 1421689500.000000, y: 13},{x: 1421690400.000000, y: 14},{x: 1421691300.000000, y: 20},{x: 1421692200.000000, y: 18},{x: 1421693100.000000, y: 13},{x: 1421694000.000000, y: 14},{x: 1421694900.000000, y: 20},{x: 1421695800.000000, y: 18},{x: 1421696700.000000, y: 0},{x: 1421697600.000000, y: 14},{x: 1421698500.000000, y: 20},{x: 1421699400.000000, y: 18},{x: 1421700300.000000, y: 13},{x: 1421701200.000000, y: 14},{x: 1421702100.000000, y: 16},{x: 1421703000.000000, y: 14},{x: 1421703900.000000, y: 15},{x: 1421704800.000000, y: 14},{x: 1421705700.000000, y: 14},{x: 1421706600.000000, y: 13},{x: 1421707500.000000, y: 16},{x: 1421708400.000000, y: 19},{x: 1421709300.000000, y: 20},{x: 1421710200.000000, y: 18},{x: 1421711100.000000, y: 0},];
@@ -183,7 +183,6 @@ var Hover = Rickshaw.Class.create(Rickshaw.Graph.HoverDetail, {
 			var label = document.createElement('div');
 			label.className = 'label';
 			label.innerHTML = d.name + ": " + d.formattedYValue;
-			label.style.color = '#000'
 
 			line.appendChild(swatch);
 			line.appendChild(label);
@@ -210,67 +209,16 @@ var hover = new Hover( { graph: graph } );
 
 $(window).resize(function(){
   graph.configure({
-    width: window.innerWidth * 0.9,
+    width: window.innerWidth * 0.80,
     height: window.innerHeight * 0.5,
   });
+      timeline.configure({
+  	width: window.innerWidth * 0.80,
+  	height: window.innerHeight * 0.5,
+  });
   graph.render();
+
 });
 
 
 </script>
-
-<div class="table-responsive"style="overflow:auto; height:200px;">
-<table id="mytable" class="table table-bordred table-striped" style=" margin:0 auto; margin-top:50px;">
-   
-   <thead>
-   
-   <th>Event #</th>
-    <th>Position</th>
-     <th>Type</th>
-     <th>Time</th>
-     <th>Duration</th>
-
-   </thead>
-    <tbody>
-    
-    <tr>
-    <td>10</td>
-    <td>Back</td>
-    <td>Apnea</td>
-    <td>00:45:00</td>
-    <td>25 sec</td>
-</tr>
-    
- <tr>
-    <td>11</td>
-    <td>Left</td>
-    <td>Apnea</td>
-    <td>02:45:00</td>
-    <td>15 sec</td>
-</tr>
-    
-    
- <tr>
-    <td>12</td>
-    <td>Right</td>
-    <td>Hypopnea</td>
-    <td>07:45:00</td>
-    <td>11 sec</td>
-    </tr>
-
-     <tr>
-    <td>12</td>
-    <td>Right</td>
-    <td>Hypopnea</td>
-    <td>12:45:00</td>
-    <td>18 sec</td>
-    </tr>
-
-        
-    </tbody>
-        
-</table>
-</div>
-
-</body>
-</html>
