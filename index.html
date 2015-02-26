@@ -85,6 +85,10 @@
 			left: 30px;
 			height:10px	;
 		}
+		.label
+		{
+			color:#000;
+		}
 	</style>
 	</head>
 	<body>
@@ -179,6 +183,7 @@ var Hover = Rickshaw.Class.create(Rickshaw.Graph.HoverDetail, {
 			var label = document.createElement('div');
 			label.className = 'label';
 			label.innerHTML = d.name + ": " + d.formattedYValue;
+			label.style.color = '#000'
 
 			line.appendChild(swatch);
 			line.appendChild(label);
