@@ -133,17 +133,17 @@ Rickshaw.Graph.HoverDetail = Rickshaw.Class.create({
 	},
 
 	hide: function() {
-		this.visible = false;
-		this.element.classList.add('inactive');
+		this.visible = true;
+		this.element.classList.add('test');
 
 		if (typeof this.onHide == 'function') {
 			this.onHide();
 		}
 	},
-
+	//Changing test to inactive will turn off the mouse tracking while cursor is not on graph
 	show: function() {
 		this.visible = true;
-		this.element.classList.remove('inactive');
+		this.element.classList.remove('test');
 
 		if (typeof this.onShow == 'function') {
 			this.onShow();
