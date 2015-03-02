@@ -17,7 +17,7 @@ Rickshaw.Graph.RangeSlider.Preview = Rickshaw.Class.create({
 			width: 400,
 			gripperColor: undefined,
 			frameTopThickness: 3,
-			frameHandleThickness: 10,
+			frameHandleThickness: 30,
 			frameColor: "#d4d4d4",
 			frameOpacity: 1,
 			minimumFrameWidth: 0,

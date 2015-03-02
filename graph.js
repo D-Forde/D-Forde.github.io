@@ -5,6 +5,7 @@ var data = [{x: 1421625600.000000, y: 13},{x: 1421626500.000000, y: 20},{x: 1421
 var graph = new Rickshaw.Graph( {
 	width: width,
 	height:height,
+	interpolation: 'linear',
 	element: document.getElementById("chart"),
 	renderer: 'line',
 	padding: { top: 0.1 },
