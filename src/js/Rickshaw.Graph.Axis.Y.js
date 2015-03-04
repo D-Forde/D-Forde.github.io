@@ -7,7 +7,7 @@ Rickshaw.Graph.Axis.Y = Rickshaw.Class.create( {
 		this.graph = args.graph;
 		this.orientation = args.orientation || 'right';
 
-		this.pixelsPerTick = args.pixelsPerTick || 75;
+		this.pixelsPerTick = args.pixelsPerTick || 37.5;
 		if (args.ticks) this.staticTicks = args.ticks;
 		if (args.tickValues) this.tickValues = args.tickValues;
 
@@ -16,7 +16,7 @@ Rickshaw.Graph.Axis.Y = Rickshaw.Class.create( {
 
 		this.tickFormat = args.tickFormat || function(y) { return y };
 
-		this.berthRate = 0.10;
+		this.berthRate = 0.05;
 
 		if (args.element) {
 

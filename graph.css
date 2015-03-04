@@ -1,7 +1,6 @@
 		body { 
 			font-family: Arial, sans-serif 
 		}
-
 		#chart-container{
 			width:95%;
 			marsgin-left:-15px;
@@ -30,6 +29,7 @@
 			top: 88px;
 			bottom: 0;
 			width:23px;
+            height:112%;
 		}
 		#x_axis {
 			position: relative;
@@ -44,6 +44,28 @@
 		}
 		.rickshaw_graph .detail{
 			background:rgba(0,0,0,1);
+		}
+        .rickshaw_annotation_timeline .annotation {
+            cursor:pointer;
+            background-color:rgba(70,130,255,0.5);
+        }
+        .rickshaw_annotation_timeline .annotation:hover, .rickshaw_annotation_timeline .annotation.active {
+            cursor:pointer;
+            background-color:rgba(70,130,255,1);
+        }
+        .rickshaw_annotation_timeline .annotation .content {
+			right: 60px;
+			width: 105px;
+			display: none;
+			cursor: pointer;
+		}
+		.rickshaw_annotation_timeline .annotation .content:before {
+			content: "\25b2";
+			position: absolute;
+			top: -11px;
+			right: 36px;
+			color: white;
+			text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.8);
 		}
 		svg {
 			width:100%;
