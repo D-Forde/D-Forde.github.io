@@ -50,7 +50,7 @@
         .rickshaw_annotation_timeline .annotation {
             cursor:pointer;
             background-color:rgba(70,130,255,0.5);
-            margin-left:-1px;
+            margin-left:-2px;
             
         }
         .rickshaw_graph .annotation_line {
