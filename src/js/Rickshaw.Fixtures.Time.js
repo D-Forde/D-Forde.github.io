@@ -32,6 +32,10 @@ Rickshaw.Fixtures.Time = function() {
 			seconds: 3600 * 6,
 			formatter: function(d) { return self.formatTime(d) }
 		}, {
+			name: '2 hour',
+			seconds: 3600 * 2,
+			formatter: function(d) { return self.formatTime(d) }
+		}, {
 			name: 'hour',
 			seconds: 3600,
 			formatter: function(d) { return self.formatTime(d) }
