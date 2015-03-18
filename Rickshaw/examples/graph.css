@@ -1,0 +1,90 @@
+		body { 
+			font-family: Arial, sans-serif 
+		}
+		#chart-container{
+			width:95%;
+            height:600px;
+			marsgin-left:-15px;
+		}
+		#chart{
+			top:6px;
+			left:25px;
+			width:100.25%;
+		}
+		#timeline{
+			left:25px;
+			height:20px;
+			border-top:1px solid lightgrey;
+            top:-22px;
+		}		
+		#preview{
+			left:5px;	
+			marsgin:0 auto;	
+			height:75px;
+		}
+		#legend {
+			display:block;
+			text-align: center;
+		}
+		#y_axis {
+			position: absolute;
+			top: 88px;
+			bottom: 0;
+			width:23px;
+            height:112%;
+		}
+		#x_axis {
+			position: relative;
+			top:15px;
+			left: 30px;
+			height:10px	;
+		}
+		.label{
+			color:black;
+			font-size:100%;
+			font-weight:100;
+		}
+		.rickshaw_graph .detail{
+			background:rgba(0,0,0,1);
+		}
+        .rickshaw_annotation_timeline .annotation {
+            cursor:pointer;
+            background-color:rgba(70,130,255,0.5);
+            margin-left:-1px;
+            
+        }
+        .rickshaw_graph .annotation_line {
+            bottom: -2px;
+        }
+        .rickshaw_annotation_timeline .annotation:hover, .rickshaw_annotation_timeline .annotation.active {
+            cursor:pointer;
+            background-color:rgba(70,130,255,1);
+        }
+        .rickshaw_annotation_timeline .annotation .content {
+			right: 60px;
+			width: 105px;
+			display: none;
+			cursor: pointer;
+		}
+		.rickshaw_annotation_timeline .annotation .content:before {
+			content: "\25b2";
+			position: absolute;
+			top: -11px;
+			right: 36px;
+			color: white;
+			text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.8);
+		}
+		.rickshaw_graph .x_tick{
+            border-left:1px solid rgba(0,0,0,0.2);
+		}
+		.rickshaw_graph .x_tick .title{
+			bottom:-25px;
+            margin-left:-15px;
+            -ms-transform: rotate(-40deg); /* IE 9 */
+            -webkit-transform: rotate(-40deg); /* Safari */
+            transform: rotate(-40deg);
+		}
+		svg {
+			width:100%;
+			height:50%;
+		}

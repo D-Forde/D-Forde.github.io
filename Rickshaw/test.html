@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>  
+    <script src="http://d3js.org/d3.v2.min.js?2.10.0"></script>
+    <script type="text/javascript" src="../d3.v2.js" charset="utf-8" ></script>
+    <script type="text/javascript" src="column-chart.js"></script>
+<style>
+.chart rect {
+  stroke: white;
+  fill-opacity: .6;
+  fill: steelblue;
+}
+.bar.positive {
+  fill: #80c080;
+}
+.bar.negative {
+  fill: brown;
+}
+.axis text {
+  font: 10px sans-serif;
+}
+.axis1 text {
+  font: 10px sans-serif;
+}
+.axis. path .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.axis1 path .axis1 line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+</style> 
+</head>
+<body>
+  <div id="example"></div>
+  <script>
+
+    var data = [["A",9], ["B",-15], ["C",15], ["D",10], ["E",-10], ["F", 5]];
+    var data1 = [[0 , 1],[1 , -1],[2 , -1],[3 , 0],[4 , 1],[5 , -1],[6 , 1],[7 , -1],[8 , -1],[9 , 0],[10 , 0],[11 , -1],[12 , 1],[13 , 1],[14 , 0],[15 , -1],[16 , 0],[17 , -1],[18 , 1],[19 , -1],[20 , -1],[21 , -1],[22 , 1],[23 , 0]];
+
+    d3.select("#example")
+      .datum(data1)
+        .call(columnChart()
+          .width(960)
+          .height(500)
+          .x(function(d, i) { return d[0]; })
+          .y(function(d, i) { return d[1]; }));
+
+  </script>
+
+
+</body>
+</html>
