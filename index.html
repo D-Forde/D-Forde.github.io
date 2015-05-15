@@ -3,120 +3,293 @@
     <head>
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <!--Import Awesome Font.css-->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <style>
+            nav .brand-logo{
+            font-size:1.75em;
+            color:white;
+            padding:0 15px;}
+            
+            nav .brand-logo:hover{
+            background:rgba(255,255,255, 0.1);
+            border-bottom:solid #fff 5px;}
+            
+            nav a{
+            transition:0.3s}
+            
             dt{
-                font-weight:700;
-                text-transform: uppercase;
-                margin-bottom: .2em;
-                line-height:140%;}
+            font-weight:700;
+            text-transform: uppercase;
+            margin-bottom: .2em;
+            line-height:140%;}
+            
             dd{
-                margin-left:0;
-                margin-bottom: .5em;}
+            margin-left:0;
+            margin-bottom: .5em;}
+            
+            .intro{
+            text-align: left;
+            padding-top: 1%;}
+            
+            .intro h1{
+            font-weight: 700;
+            font-size:2.5em;
+            margin-bottom:0.1em;
+            line-height:120%}
+            
+            .intro h5{
+            text-transsform: uppercase;
+            color: #333333;
+            display: inline-block;
+            font-size: 1.2rem;}
+            
+            .avatar{
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom:1em;}
+            
+            .gallery-img{
+            display:inline-block;
+            position:relative;
+            vertical-align:top;}
+            
+            .g{
+            display:block;}
+            
+            .gallery-hover{
+            background:rgba(0, 0, 0, 0.75);
+            bottom:0;
+            color:white;
+            font-size:1em;
+            left:0;
+            opacity:0;
+            overflow:hidden;
+            position:absolute;
+            top:0;
+            right:0;
+            -webkit-transition:0.5s;
+            transition:0.5s;
+            padding: 3.75em 3em;;}
+    
+            .gallery-hover:hover, .gallery-hover:focus{
+            opacity:1;}
+            
+            .parallax img{
+            position:absolute;
+            display:block;
+            width:100%;}
+            .parallax-container{
+            min-height:380px;
+            height:auto;
+            }
+            a img{
+            width:100%;}
+            
+            footer.page-footer{
+            margin-top:0px;}
+            
+            footer a i{
+            -moz-transition:0.3s;
+            -o-transition:0.3s;
+            -ms-transition:0.3s;
+            -webkit-transition:0.3s;
+            transition:0.3s;
+            margin: .1em;}
+            
+            footer a:hover{
+            color:white;}
+            
         </style>
     </head>
 
     <body>
-        <nav class="grey darken-4 col s12 l10 offset-l1" role="navigation">
-            <div class="nav-wrapper container">
-                <a id="logo-container" href="index.html" class="brand-logo">Dillon Forde</a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+        <div class="navbar-fixed">
+            <nav class="grey darken-4" role="navigation">
+                <div class="nav-wrapper container">
+                    <a href="#index-banner" class="brand-logo">DILLON FORDE</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
 
-                <ul id="nav-mobile" class="side-nav">
-                    <li><a href="#">Navbar Link</a></li>
-                </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-            </div>
-        </nav>
-        <div class="section no-pad-bot" id="index-banner" style="background:#EEE;">
-            <div class="container">
-                <br><br>
-                <h1 class="header center">Temporary Header</h1>
-            <div class="row center">
-                <h5 class="header col s12 light">Temporary content that will be replaced at a later point</h5>
-            </div>
-            <div class="row center">
-                <a href="portfolio.html" id="download-button" class="btn-large waves-effect waves-light blue">My Portfolio</a>
-            </div>
-            <br><br>
-
-            </div>
+                    <ul id="nav-mobile" class="side-nav">
+                        <li><a href="#">Navbar Link</a></li>
+                    </ul>
+                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                </div>
+            </nav>
         </div>
         
-        <div class="container">
-            <div class="section">
-                <!--   Icon Section   -->
-                <div class="row">
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center light-green-text"><i class="mdi-image-flash-on"></i></h2>
-                            <h5 class="center">Lorem ipsum dolor</h5>
-                            <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center light-blue-text"><i class="mdi-social-group"></i></h2>
-                            <h5 class="center">Lorem ipsum dolor</h5>
-                            <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center red-text"><i class="mdi-action-settings"></i></h2>
-                            <h5 class="center">Lorem ipsum dolor</h5>
-                            <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
-                    
+        
+          <div id="index-banner" class="parallax-container section scrollspy">
+            <div class="section no-pad-bot">
+              <div class="container">
+                <br><br>
+                <h1 class="header center light white-text">Welcome,</h1>
+                <div class="row center">
+                  <h5 class="header col s12 light white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
                 </div>
+                <br><br>
+
+              </div>
             </div>
-            <br><br>
-        </div> 
-    <!----------------- Footer ----------------->
-        <footer class="page-footer grey darken-4">
+            <div class="parallax"><img src="2.png" alt="Background"></div>
+          </div>
+        
+        <div id="about" class="section scrollspy">
             <div class="container">
+                <div class="section boarder">
+                    <div class="row">
+                        <div class="col s12 center">
+                            <p><img class="circle" src="128.jpg"></p>
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <div class="left-align">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <br>
+                            </div>
+                            <br><br><a class="waves-effect waves-light btn center light-green z-depth-1" href="#about" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+              <hr>
+          </div>
+        </div>
+        
+        <div id="portfolio" class="section scrollspy">
+          <div class="container">
+            <div class="section">
                 <div class="row">
-                    <div class="col l5 s12">
-                        <p class="white-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                            <p class="white-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+                    <div class="col s12 m4">
+                        <div class="gallery-img">
+                            <a href="#"><img class="g"src="http://materializecss.com/images/sample-1.jpg"></a>
+                            <div class="gallery-hover">
+                                <a href="#">
+                                    <h5 class="white-text center">Test Header</h5>
+                                    <p class="white-text center">Web Site</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col s12 m4">
+                        <div class="gallery-img">
+                            <a href="#"><img class="g"src="http://materializecss.com/images/sample-1.jpg"></a>
+                            <div class="gallery-hover">
+                                <a href="#">
+                                    <h5 class="white-text center">Test Header</h5>
+                                    <p class="white-text center">Web Site</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>                 
+                    <div class="col s12 m4">
+                        <div class="gallery-img">
+                            <a href="#"><img class="g"src="http://materializecss.com/images/sample-1.jpg"></a>
+                            <div class="gallery-hover">
+                                <a href="#">
+                                    <h5 class="white-text center">Test Header</h5>
+                                    <p class="white-text center">Web Site</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>                 
+                </div>
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="gallery-img">
+                            <a href="#"><img class="g"src="http://materializecss.com/images/sample-1.jpg"></a>
+                            <div class="gallery-hover">
+                                <a href="#">
+                                    <h5 class="white-text center">Test Header</h5>
+                                    <p class="white-text center">Web Site</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col s12 m4">
+                        <div class="gallery-img">
+                            <a href="#"><img class="g"src="http://materializecss.com/images/sample-1.jpg"></a>
+                            <div class="gallery-hover">
+                                <a href="#">
+                                    <h5 class="white-text center">Test Header</h5>
+                                    <p class="white-text center">Web Site</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>                 
+                    <div class="col s12 m4">
+                        <div class="gallery-img">
+                            <a href="#"><img class="g" src="http://materializecss.com/images/sample-1.jpg"></a>
+                            <div class="gallery-hover">
+                                <a href="#">
+                                    <h5 class="white-text center">Test Header</h5>
+                                    <p class="white-text center">Web Site</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="col l3 s12">
-                        <ul></ul>
+                    <div class="col s12 center">
+                    <br><br><a class="waves-effect waves-light btn center light-green z-depth-1" href="#about" target="_blank">View More</a>
                     </div>
-                    
-                    <div class="col l4 s12">
-                        <dt><a href="about.html">About</a></dt>
-                        <dd class="white-text">Learn more about Dillon</dd>
-                         <dt><a href="about.html">Portfolio</a></dt>
-                        <dd class="white-text">View a portfolio of Dillon's work</dd>
-                        <dt><a href="about.html">Blog</a></dt>
-                        <dd class="white-text">Read Dillon's blog posts</dd>
-                        <dt><a href="about.html">Contact</a></dt>
-                        <dd class="white-text">Send a message or project request to Dillon.</dd>
-                    </div>
+                </div>
+              </div>
+              <hr>
+            </div>
+        </div>
+        <div id="contact" class="section scrollspy">
+          <div class="container">
+            <div class="section">
+
+              <div class="row">
+                <div class="col s12 center">
+                  <h4>Feel free to contact me</h4>         
+                    <p>Please feel free to email me with any projects, inquiries, feedback or anything else.</p>
+                    <p><a class="grey-text text-darken-1" href="mailto:dillon.forde1@gmail.com">dillon.forde1@gmail.com</a></p>
+                </div>
+              </div>
+                <a class="btn-floating btn-large waves-effect waves-light light-green right" href="#index-banner"><i class="mdi-hardware-keyboard-arrow-up"></i></a>
+            </div>
+          </div>
+        </div>
+
+        
+                <!----------------- Footer ----------------->
+         <footer class="page-footer grey darken-4">
+            <div class="container">
+                <div class="row center white-text" style="margin-bottom:0px;">
+                    <a href="https://ie.linkedin.com/in/dillonforde" style="margin-left:55px;"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <a href="mailto:dillon.forde1@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
                 </div>
             </div>
             <div class="footer-copyright grey darken-4">
                 <div class="container">
+                    <p class="center white-text">Made with <a href="http://materializecss.com/about.html">Materialize</a> framework.</p>
                 </div>
             </div>
         </footer>     
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+            (function($){
+  $(function(){
+
+    $('.button-collapse').sideNav();
+    $('.parallax').parallax();
+
+  }); // end of document ready
+})(jQuery); // end of jQuery name space
+            
+    $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+  </script>  
     </body>
   </html>

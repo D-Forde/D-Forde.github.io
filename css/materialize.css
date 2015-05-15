@@ -1981,8 +1981,8 @@ a {
   -ms-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;}
-li a:hover, dt a:hover{
-    color:#0277bd;}
+li a:hover,nav a:hover{
+    color:#fff;}
 
 .valign-wrapper {
   display: -webkit-box;
@@ -5072,9 +5072,11 @@ nav {
       transition: background-color .3s;
       float: left;
       padding: 0; }
-      nav ul li:hover, nav ul li.active {
-        background-color: rgba(0, 0, 0, .1);
-        border-bottom:solid #4682B4 5px;}
+      nav ul li:hover, nav ul li.active{
+        color:#fff;
+        background-color: rgba(255, 255, 255, .1);
+        borsder-bottom:solid #4682B4 5px;
+        border-bottom:solid #fff 5px;}
     nav ul a {
       font-size: 1rem;
       color: #fff;
