@@ -1,0 +1,78 @@
+ nav .brand-logo{
+font-size:1.75em;
+color:white;
+padding:0 15px;}
+nav .brand-logo:hover{
+background:rgba(255,255,255, 0.1);
+border-bottom:solid #fff 5px;}
+nav a{
+transition:0.3s}
+dt{
+font-weight:700;
+text-transform: uppercase;
+margin-bottom: .2em;
+line-height:140%;}
+dd{
+margin-left:0;
+margin-bottom: .5em;}
+.intro{
+text-align: left;
+padding-top: 1%;}
+.intro h1{
+font-weight: 700;
+font-size:2.5em;
+margin-bottom:0.1em;
+line-height:120%}
+.intro h5{
+color: #333333;
+display: inline-block;
+font-size: 1.2rem;}
+.avatar{
+display:block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom:.75em;}
+.gallery-img{
+display:inline-block;
+position:relative;
+vertical-align:top;
+margin-bottom:1em}
+.g{
+display:block;}
+.gallery-hover{
+background:rgba(0, 0, 0, 0.75);
+bottom:0;
+color:white;
+font-size:1em;
+left:0;
+opacity:0;
+overflow:hidden;
+position:absolute;
+top:0;
+right:0;
+-webkit-transition:0.5s;
+transition:0.5s;
+padding: 2.75em 2em;;}
+.gallery-hover:hover, .gallery-hover:focus{
+opacity:1;}
+.parallax img{
+position:absolute;
+display:block;
+width:100%;}
+.parallax-container{
+min-height:380px;
+height:auto;
+}
+a img{
+width:100%;}
+footer.page-footer{
+margin-top:0px;}
+footer a i{
+-moz-transition:0.3s;
+-o-transition:0.3s;
+-ms-transition:0.3s;
+-webkit-transition:0.3s;
+transition:0.3s;
+margin: .1em;}
+footer a:hover{
+color:white;}
