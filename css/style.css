@@ -1,6 +1,10 @@
+@media screen and (max-width: 400px) {
+    nav .brand-logo{
+    left:25%}
+}
 @media screen and (max-width: 320px) {
     nav .brand-logo{
-    left:35%}
+    left:30%}
 } 
 nav .brand-logo{
     font-size:1.75em;
